@@ -14,6 +14,8 @@ Avoimuus on aina ollut erottamaton osa tieteellistä tutkimusta ja erityisesti t
 
 # Johdanto - aihe esiteltynä
 
+Keskustelu tutkimusmenetelmien avoimuudesta 
+
 Tutkimusmenetelmien avoimuudesta puhuttaessa on tärkeää muistaa että ei-laskennallisissa tutkimusmenetelmät ovat avoimia. Diskurssianalyysi tau jesjysteky
 
 Tutkimusmenetelmien avoimuus
@@ -27,9 +29,8 @@ Tämä teksti on yhteiskuntatieteilijän kirjoittama, joka tutkii elinoloja ja t
 
 
 - Internetin hakukoneet ovat parhaita tutkimuskoordinaattoreita
-- Verkostovaikutus - jos haluut saada, on pakko antaa
-
-Lisensointi, maksut, 
+- Verkostovaikutus - jos haluu saada, on pakko antaa
+- Lisensointi, maksut, 
 
 
 
