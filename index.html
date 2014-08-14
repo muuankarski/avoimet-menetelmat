@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Markus Kainu" />
+  <title>Avoimet menetelmät ja tutkimuksellinen yhteistyö</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style>
+  
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(fonts/Lato.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(fonts/LatoBold.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(fonts/LatoBlack.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'), url(fonts/LatoItalic.woff) format('woff');
+  }
+  
+  
+  -something { /* Just to escape the effect of html tag above in pandoc*/
+  
+  }
+  
+  .title /* Pandoc title header (h1.title) */
+      {
+      text-align: center;
+  	border-width:0px;
+  	font-size: 1.5em;
+  	margin: 0 0 5px 0;
+  	word-spacing: .1em;
+  	border-bottom: 0px;
+  	text-transform:none;
+      }
+  
+  .author /* Pandoc author(s) header (h2.author) */
+      {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      border-bottom: 0px;
+      }
+  
+  .date /* Pandoc date header (h3.date) */
+      {
+  	font-family:  Lato, Arial;
+  	text-align: center;
+  	font-size: 1.1em;
+  	line-height: 1.2em;
+      }
+  
+  
+  body {
+      margin-left: 240px;
+      max-width:750px; 
+      border: 0px;
+      font-family: Lato, Helvetica, sans-serif;
+  }
+  
+  
+  #toc {
+      font-size:0.9em;
+      height: 100%;
+      position: fixed;
+      width: 220px;
+      left: 5px;
+      padding-top: 20px;
+      color: #003333;
+      border-right: 1px dashed #C1C1C1;
+  }
+  
+  #toc_header {
+      font-size: 1em;
+      font-weight: bold;    
+      border-bottom: 1px dashed #C1C1C1;
+      color: black;
+  }
+  
+  
+  
+  #TOC li {
+      padding: 2px 4px;
+      margin-left: 2px;
+  }
+  
+  
+  #TOC a {
+      color: #003333;
+      display: block;
+  }
+  
+  
+  #TOC {
+      font-size:0.9em;
+      height: 100%;
+      position: fixed; 
+      width: 220px;
+      left: 5px;
+      padding-top: 20px;
+      color: #003333;
+      border-right: 1px dashed #C1C1C1;
+  }
+  
+  #TOC_HEADER {
+      font-size: 1em;
+      font-weight: bold;    
+      border-bottom: 1px dashed #C1C1C1;
+      color: black;
+  }
+  
+  
+  
+  #TOC li {
+      padding: 2px 4px;
+      margin-left: 2px;
+  }
+  
+  
+  #TOC a {
+      color: #003333;
+      display: block;
+  }
+  
+  
+  blockquote {
+  	padding-left: .5em; 
+      border-left: 2px solid #C1C1C1;
+  	font-style: italic;
+  }
+  
+  
+  pre {	
+     margin-top: 0;
+     max-width: 95%;
+     border: 1px dashed #ccc;
+     white-space: pre-wrap;
+     font-size:1.0em;
+      background: #FFFFFF;
+  }
+  
+  pre code {
+     display: block; 
+     padding: 0.2em;
+     font-size:1.0em;
+  }
+  
+  code.r, code.cpp {
+     background-color: #ECEEF0;
+  }
+  
+  
+  
+  ul {
+  	font-size: 100% !important;
+  	font-family: Lato, Helvetica, sans-serif;
+  }
+  li {
+  	font-family: Lato, Helvetica, sans-serif;
+   	font-size: 1em;
+   	line-height: 1.1em;
+  }
+  
+  
+  p {
+  	font-family: Lato, Helvetica, sans-serif;
+  	padding-top: 2px;
+  	padding-bottom: 2px;
+  	font-size: 1em;
+  	line-height: 1.2em;
+  }
+  ol {
+  	list-style: decimal outside;
+  	list-style-type: decimal;
+  	float: none;
+  	margin: .5em 0 .5em 30px;
+  	padding: 0;
+  }
+  ul {
+  	margin: .2em 0 .2em 10px;
+  	padding: 0;
+  }
+  UL li, ol li {
+  	line-height: 1.1em;
+  	padding: 2px;
+  }
+  a:link {
+  	color: #657b83;
+     /* text-decoration: none; */
+  }
+  a:hover {
+  	color: #657b83;
+  }
+  a:visited {
+  	color: #657b83;
+  }
+  a:focus {
+  	color: #657b83;
+  }
+  a:active {
+  	color: #657b83;
+  }
+  
+  h1 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.3em;
+  	padding: 2px;
+  	line-height: 1.3em;
+      font-weight: 400;
+  	/*letter-spacing: 0.06em;
+  	word-spacing: .1em;*/
+      border-bottom: 0.5px solid #657b83;
+  	text-transform:uppercase;
+      color: #657b83;
+  }
+  h2 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+      font-weight: 300;
+  	letter-spacing: 0.05em;
+  	word-spacing: .1em;
+  	border-bottom: 0.5px dashed #657b83;
+  /*	text-transform:capitalize;*/
+      color: #657b83;
+  
+  }
+  h3 {
+  	font-family:  Lato, Arial;
+  	font-size: 1.1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+      font-weight: 300;
+  	letter-spacing: 0.05em;
+  	word-spacing: .1em;
+      color: #657b83;
+  
+  }
+  h4 {
+  	font-family: Lato;
+  	font-size: 1.0em;
+  	padding: 2px;
+  	line-height: 1.0em;
+  	color: #555;
+  	font-weight: italic;
+      color: #657b83;
+  }
+  h5 {
+  	font-family: Avant Garde;
+  	font-size: 1.05em;
+  	padding: 2px;
+  	line-height: 1.15em;
+  	color: #555;
+  	font-weight: normal;
+      color: #657b83;
+  }
+  h6 {
+  	font-family: Lato;
+  	font-size: 1em;
+  	padding: 2px;
+  	line-height: 1.1em;
+  	color: #555;
+  	font-weight: normal;
+      color: #657b83;
+  }
+  p.caption, table caption, caption{
+      margin-top:0em;
+      padding:2px;
+      font-weight: 600;
+      font-size:1.0em;
+      text-align:left;
+      color: #657b83;
+  }
+  
+  /* table styles */
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+      line-height: 1.4em;
+  	font-size: 0.9em;
+  	/*font-family: monospace;*/
+  
+  }
+  .views-table, table {
+  	margin-left: 2px;
+  	margin-bottom: 10px;
+  	/*width: 1300px;*/
+  }
+  tr {
+  	line-height: 1.2em;
+  	border-bottom: #9e9e9e thin solid;
+  }
+  tr:last-child {
+  	line-height: 1.2em;
+  }
+  th {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  	text-align: left;
+  	border-bottom: #9e9e9e thin solid;
+  }
+  th:last-child {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  	text-align: left;
+  }
+  th:first-child {
+  	margin: 5px 0 5px 0;
+  	padding: 0 5px 0 5px;
+  /*	border: #9e9e9e thin solid; */
+  }
+  tbody tr {
+  	line-height: 1.2em;
+  /*	border-left: #9e9e9e thin solid; */
+  }
+  tbody tr:nth-child(odd) {
+  	line-height: 1.2em;
+  	background-color: #F3F5F5;
+  }
+  td {
+  	padding: 0 5px 0 5px;
+  /*	border-right: #9e9e9e thin solid; */
+  }
+  td:last-child {
+  	padding: 0 5px 0 5px;
+  }
+  DL {
+  	margin: .3em 0 .3em 0;
+  }
+  DT {
+  	margin: .3em 0 .3em 0;
+  }
+  DD {
+  	line-height: 1.5em;
+  	list-style: none;
+  	margin: .7em 0 .7em 2em;
+  }
+  td.active {
+  	background-color: transparent!important;
+  }
+  tr:last-child {
+  	border-bottom: #9e9e9e thin solid;
+  }
+  tr:first-child {
+  	border-top: #9e9e9e thin solid;
+  }
+  th:last-child {
+  /*	border-left: #9e9e9e thin solid; */
+  }
+  th:last-child {
+  	/*border-right: #9e9e9e thin solid;*/
+  }
+  </style>
+  
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Avoimet menetelmät ja tutkimuksellinen yhteistyö</h1>
+<h2 class="author">Markus Kainu</h2>
+<h3 class="date">elokuu 2014</h3>
+</div>
+<!--
+pandoc -s -S -H /home/aurelius/web/css/rmarkdown.css avoimet-menetelmat.md -o avoimet-menetelmat.html
+-->
+
+<p>Avoimuus on aina ollut erottamaton osa tieteellistä tutkimusta ja erityisesti tutkimusten tuloksilla on nähty olevan arvoa vasta kun ne ovat olleet muun tiedeyhteisön tiedossa ja arvioitavina. Tieto- ja viestintäteknologian kehitys, digitalisaatio, on lisännyt painetta määritellä tutkimuksen avoimuuden kriteerit uudelleen. Samalla laskennallisten analyysimenetelmien monimutkaistuminen sekä leviäminen luonnontieteistä yhteiskunta- ja humanistisiin tieteisiin, on lisännyt painetta edistää tutkimusjulkaisujen avoimuuden ohella myös tutkimusmenetelmien avoimuutta.</p>
+<!-- #################################### -->
+
+<h1 id="johdanto---aihe-esiteltynä">Johdanto - aihe esiteltynä</h1>
+<p>Tutkimusmenetelmien avoimuudesta puhuttaessa on tärkeää muistaa että ei-laskennallisissa tutkimusmenetelmät ovat avoimia. Diskurssianalyysi tau jesjysteky</p>
+<p>Tutkimusmenetelmien avoimuus</p>
+<p>Vaatimukset tieteellisen tutkimuksen menetelmien avoimuudesta liittyvät ns. laskennalliseen tutkimukseen, jossa laskenta-algoritmeillä merkittävä rooli tutkimusongelmiin vastattaessa. Laskennallliset menetelmät ovat tyypillisempiä luonnontieteissä, mutta viime vuosina mielenkiinto laskennallisia menetelmiä kohtaan on lisääntynyt merkittävästi myös yhteiskuntatieteiden ja humanististen tieteiden puolella.</p>
+<div class="figure">
+<img src="http://scot.okfn.org/files/2013/12/oscience.jpg" alt="Tiede avattuna" /><p class="caption">Tiede avattuna</p>
+</div>
+<p>Tämä teksti on yhteiskuntatieteilijän kirjoittama, joka tutkii elinoloja ja tulonjakoa Venäjällä ja Itäisessä Keski-Euroopassa.</p>
+<ul>
+<li>Internetin hakukoneet ovat parhaita tutkimuskoordinaattoreita</li>
+<li>Verkostovaikutus - jos haluut saada, on pakko antaa</li>
+</ul>
+<p>Lisensointi, maksut,</p>
+<p>Keskustelu tutkimusmenetelmien avoimuudesta on ollut vähäistä yhteiskuntatieteiden ja humanististen tieteiden (YHT) piirissä. Keskeisin syy lienee se, että valtaosa YHT-tutkimuksesta on <em>laadullista</em>, jossa ei käytetä laskennallisia analyysimenetelmiä. Ajatus siitä että <em>diskurssianalyysin</em> käyttäminen velvoittaisi tiukkojen lisenssiehtojen hyväksymistä ja rahallisen maksun suorittamista on varmasti monelle vieras. Toisaalta määrällisessä tutkimuksessa analyysiohjelmistojen valintaa ovat ohjanneet muut seikat (perinteet, tuttuus) jolloin käytetyn ja opetetun analyysikielen valinnan eri ulottuvuuksia ja pitkäaikaisia vaikutuksia ei olla arvioitu. Joka tapauksessa 1) laskennallisen analyysin YHT-tieteellisten sovellusmahdollisuuksien lisääntymisen sekä 2) avointen analyysimenetelmien kehittymisen myötä on tutkimusmenetelmien avoimuus on nousemassa yhä tärkeämmäksi puheenaiheeksi.</p>
+<!-- #################################### -->
+
+<h1 id="avoimien-tutkimusmenetelmien-tuomat-hyödyt">Avoimien tutkimusmenetelmien tuomat hyödyt</h1>
+<p>Menetelmien avoimuuden hyödyistä on olemassa monia esimerkkejä etenkin luonnontieteissä, kuten <a href="http://www.bioconductor.org/">Bioconductor</a>-projekti, jota voisi luonnehtia bioinformatiikan is another separate package repository, but can be regarded as <em>domain spesific</em> for it hosts packages for <em>the analysis and comprehension of high-throughput genomic data</em>.</p>
+<!-- #################################### -->
+
+<h1 id="avoimien-tutkimusmenetelmien-tila-suomessa">Avoimien tutkimusmenetelmien tila Suomessa</h1>
+<p>Avoimien tutkimusmenetelmien käyttö vaihtelee tieteenalojen ja yliopistojen välillä Suomessa. Menetelmien avoimuuden edistäminen on yksittäisten tutkijoiden ja tutkimusryhmien oman aktiivisuuden varassa, mutta yleisesti sitä voidaan luonnehtia heikoksi.</p>
+<p>Tähän on varmasti monia syitä, mutta</p>
+<ul>
+<li>yliopiston johdolta ei ole linjausta</li>
+<li>palkitsemisjärjestelmää ei ole</li>
+<li></li>
+<li><p>surkea</p></li>
+<li><p>tukea ei ole itse tutkijoille, vaan erilaisiin hankkeisiin</p></li>
+</ul>
+<p>Tällainen lähetyminen on ainakin suomalaisessa yhteiskuntatieteessä vielä utopistinen visio. Sähköisen datan yhteiskunnallisen hyödyntämisen kenties kiinnostavin avaus on Aalto-yliopiston ja Helsingin yliopiston tietojenkäsittelytieteen jatko-opiskelijoiden perustama <a href="http://louhos.github.com/">Louhos-projekti</a>. Hyvin kuvaavaa on se, ettei tässä projektissa ole lainkaan yhteiskuntatieteilijöitä, ei määrällisesti tai laadullisesti orientoituneita.</p>
+<p><strong>Venäjän ja Itä-Euroopan</strong> yhteiskuntatieteellisen tutkimuksen näkökulmasta uudet avoimet aineistot ja menetelmät ovat erityisen ajankohtaisia. Venäjällä viralliset tilastot ovat olleet avoimia vasta muutaman vuoden ajan ja tekniset ratkaisut datan avaamiselle ovat edelleen hyvin takapajuisia. Voidaankin sanoa että jo <em>menneen puolivuosisadan</em> aineistojen tehokas käyttö edellyttää Venäjän kohdalla verrattain hyviä <em>tulevan puolivuosisadan</em> menetelmien osaamista.</p>
+<p>Samaan aikaan internetin merkitys kaikessa yhteiskunnallisessa näyttää voimistuvan. Sosiaalisen median rooli yhteiskunnallisen keskustelun ja jopa mobilisaation kanavana näyttää voimistuvan kaikkialla entisen Neuvostoliiton alueella. Ja yhteiskunnan tutkijan tulee tietysti olla paikalla siellä, missä yhteiskuntaa tehdään.</p>
+<p>Tässä esseessä väitän että tutkijalle murros on ennen kaikkea mahdollisuus, mutta vaatii toteutuakseen kriittisyyttä nykyisiä käytäntöjä kohtaan sekä tietoteknistä uteliaisuutta.</p>
+<p>Suomessa on toki ELO-tutkimusten jälkeenkin aatavilla laadukkaita väestötason tietolähteitä väestön elintasosta ja elinolosuhteista, mutta ne ovat pitkälti sektorilähtöisiä. Eri kyselyillä kerätään tietoa tuloista (Tilastokeskuksen (TK) tulonjakotilasto), kulutuksesta (TK:n kulutustutkimus), työstä (TK:n työvoimatutkimus), työoloista (TK:n työolotutkimus), terveydestä (Terveyden ja hyvinvoinnin laitoksen aikuisväestön ja eläkeikäisen väestön terveyskäyttäytymistutkimukset) ja koulutuksesta (TK:n aikuiskoulutustutkimus).</p>
+<p>Tämänkaltaisten sektorikohtaisten aineistojen hyödynnettävyys lukumäärällisestä rikkaudestaan huolimatta – tai siitä johtuen – on vaikeaa erityisesti silloin, kun pyrkimyksenä on arvioida laaja-alaisesti väestön elinoloja tai silloin, kun pyrkimyksenä on tehdä laaja-alaisia politiikkasuosituksia väestön hyvinvoinnin parantamiseksi. Tällöin tarvittaisiin sellainen aineistoperusta, jossa väestön hyvinvointiin ja elinoloihin liittyvät osa-alueet olisivat samanaikaisesti edustettuina.</p>
+</body>
+</html>
