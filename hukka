@@ -1,0 +1,93 @@
+
+
+Menetelmien avoimuudesta on nähty koituvan myös muita hyötyjä, olkoonkin että niitä ei voida irrottaa laajemmasta avoimen tieteen 
+
+
+
+
+
+
+Menetelmien avoimuuden hyödyistä on olemassa monia esimerkkejä etenkin luonnontieteissä, kuten [Bioconductor](http://www.bioconductor.org/)-projekti, jota voisi luonnehtia bioinformatiikan  is another separate package repository, but can be regarded as *domain spesific* for it hosts packages for *the analysis and comprehension of high-throughput genomic data*.
+
+
+
+
+
+
+
+
+
+Samalla kun vaaditaan tutkimusjulkaisujen saatavuuden  
+
+
+
+Vapaan ja avoimen lähdekoodin ohjelmistokehityksen ideana on että kuka tahansa voi muokata lähdekoodia haluamallaan tavalla sekä kopioida ja levittää sekä alkuperäistä että muokattua versiota ja käyttää ohjelmaa mihin tahansa tarkoitukseen [@wiki_avoin_2013]. 
+
+
+
+
+
+Avointen tutkimusjulkaisujen vaatimusten vanavedessä vaaditaan myös avoimuutta myös tutkimuksessa käytetyille aineistoilla ja menetelmille.  
+
+
+eli tieto- ja viestintäteknologian sähköistyminen on mullistanut on lisännyt painetta määritellä tutkimuksen avoimuuden kriteerit uudelleen. 
+
+
+
+
+
+## Laskennalliset tieteet
+
+Keskustelu tutkimusmenetelmien avoimuudesta 
+
+Tutkimusmenetelmien avoimuudesta puhuttaessa on tärkeää muistaa että ei-laskennallisissa tutkimusmenetelmät ovat avoimia. Diskurssianalyysi tau jesjysteky
+
+Tutkimusmenetelmien avoimuus
+
+## Lisensointi
+
+Avoimilla tutkimusmenetelmillä tarkoitetaan laskennallisia ohjelmointikieliä, joiden on lähdekoodi on avointa ja jotka on lisensointu vapaasti. Vapaan ja avoimen lähdekoodin ohjelmistokehityksen ideana on että kuka tahansa voi muokata lähdekoodia haluamallaan tavalla sekä kopioida ja levittää sekä alkuperäistä että muokattua versiota ja käyttää ohjelmaa mihin tahansa tarkoitukseen [@wiki_avoin_2013]. 
+
+
+Vaatimukset tieteellisen tutkimuksen menetelmien avoimuudesta liittyvät ns. laskennalliseen tutkimukseen, jossa laskenta-algoritmeillä merkittävä rooli tutkimusongelmiin vastattaessa. Laskennallliset menetelmät ovat tyypillisempiä luonnontieteissä, mutta viime vuosina mielenkiinto laskennallisia menetelmiä kohtaan on lisääntynyt merkittävästi myös yhteiskuntatieteiden ja humanististen tieteiden puolella.
+
+![Tiede avattuna](http://scot.okfn.org/files/2013/12/oscience.jpg)
+
+Tämä teksti on yhteiskuntatieteilijän kirjoittama, joka tutkii elinoloja ja tulonjakoa Venäjällä ja Itäisessä Keski-Euroopassa.
+
+
+- Internetin hakukoneet ovat parhaita tutkimuskoordinaattoreita
+- Verkostovaikutus - jos haluu saada, on pakko antaa
+- Lisensointi, maksut, 
+
+
+
+
+
+
+
+Keskustelu tutkimusmenetelmien avoimuudesta on ollut vähäistä yhteiskuntatieteiden ja humanististen tieteiden (YHT) piirissä. Keskeisin syy lienee se, että valtaosa YHT-tutkimuksesta on *laadullista*, jossa ei käytetä laskennallisia analyysimenetelmiä. Ajatus siitä että *diskurssianalyysin* käyttäminen velvoittaisi tiukkojen lisenssiehtojen hyväksymistä ja rahallisen maksun suorittamista on varmasti monelle vieras. Toisaalta määrällisessä tutkimuksessa analyysiohjelmistojen valintaa ovat ohjanneet muut seikat (perinteet, tuttuus) jolloin käytetyn ja opetetun analyysikielen valinnan eri ulottuvuuksia ja pitkäaikaisia vaikutuksia ei olla arvioitu. Joka tapauksessa 1) laskennallisen analyysin YHT-tieteellisten sovellusmahdollisuuksien lisääntymisen sekä 2) avointen analyysimenetelmien kehittymisen myötä on tutkimusmenetelmien avoimuus on nousemassa yhä tärkeämmäksi puheenaiheeksi.
+
+
+
+
+
+
+
+
+<!-- #################################### -->
+
+# Avoimien tutkimusmenetelmien tila Suomessa
+
+
+
+
+
+Tällainen lähetyminen on ainakin suomalaisessa yhteiskuntatieteessä vielä utopistinen visio. Sähköisen datan yhteiskunnallisen hyödyntämisen kenties kiinnostavin avaus on Aalto-yliopiston ja Helsingin yliopiston tietojenkäsittelytieteen jatko-opiskelijoiden perustama [Louhos-projekti](http://louhos.github.com/). Hyvin kuvaavaa on se, ettei tässä projektissa ole lainkaan yhteiskuntatieteilijöitä, ei määrällisesti tai laadullisesti orientoituneita.
+
+**Venäjän ja Itä-Euroopan** yhteiskuntatieteellisen tutkimuksen näkökulmasta uudet avoimet aineistot ja menetelmät ovat erityisen ajankohtaisia. Venäjällä viralliset tilastot ovat olleet avoimia vasta muutaman vuoden ajan ja tekniset ratkaisut datan avaamiselle ovat edelleen hyvin takapajuisia. Voidaankin sanoa että jo *menneen puolivuosisadan* aineistojen tehokas käyttö  edellyttää Venäjän kohdalla verrattain hyviä *tulevan puolivuosisadan* menetelmien osaamista. 
+
+Samaan aikaan internetin merkitys kaikessa yhteiskunnallisessa näyttää voimistuvan. Sosiaalisen median rooli yhteiskunnallisen keskustelun ja jopa mobilisaation kanavana näyttää voimistuvan kaikkialla entisen Neuvostoliiton alueella. Ja yhteiskunnan tutkijan tulee tietysti olla paikalla siellä, missä yhteiskuntaa tehdään.
+
+
+Tässä esseessä väitän että tutkijalle murros on ennen kaikkea mahdollisuus, mutta vaatii toteutuakseen kriittisyyttä nykyisiä käytäntöjä kohtaan sekä tietoteknistä uteliaisuutta.
